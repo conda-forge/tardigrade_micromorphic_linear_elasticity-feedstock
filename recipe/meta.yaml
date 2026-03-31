@@ -1,5 +1,5 @@
 {% set name = "tardigrade_micromorphic_linear_elasticity" %}
-{% set version = "1.5.4" %}
+{% set version = "1.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/UCBoulder/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f88e081b9ad714c8d441a948a320ad4ca7846fa010c0fa6dbfa32899b9a0578d
+  sha256: 918978bde37e76258b48d30621cfc065671a8fc1f9a3610a857f84a1ce932b6a
 
 build:
-  number: 1
+  number: 0
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script:
